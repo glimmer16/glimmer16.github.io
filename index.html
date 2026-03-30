@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Hongda Liu</title>
+  
+  <meta name="author" content="Xinyang Song">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/svg+xml" href="images/icon.png">
+</head>
+
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+<style>
+.preview-container {
+  position: relative;
+  display: inline-block;
+}
+
+.preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;  
+  transition: opacity 0.3s ease;  
+  overflow: hidden;
+}
+
+.preview-overlay video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p style="text-align:center">
+                    <name>Hongda Liu</name>
+                  </p>
+                  I am currently a Ph.D. student at the <a href="http://cripac.ia.ac.cn/CN/model/index.htm">NLPR</a>, Institute of Automation, Chinese Academy of Sciences (<a href="http://www.ia.cas.cn/">CASIA</a>), supervised by <a href="http://www.cbsr.ia.ac.cn/users/znsun/">Prof. Zhenan Sun</a>. 
+                  Prior to that, I received my bachelor's degree in Automation from Nanjing University</a> in 2022. 
+                  <p>
+                  My research interests revolve around <strong>unified generation and understanding</strong> and <strong>controllable vision generation(image&video)</strong>. 
+                  If you are interested in my work, please feel free to reach out for discussions or collaborations!  
+                  </p>
+                  <p style="text-align:center">
+                    <a href="mailto:xinyang.song@cripac.ia.ac.cn">Email</a> &nbsp;/&nbsp;
+                    <a href="https://github.com/glimmer16">Github</a>
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:25%;max-width:25%">
+                  <a href="images/HongdaLiu.jpg">
+                    <img style="width:100%;max-width:100%;border-radius:50%;object-fit:cover;aspect-ratio:1/1" alt="profile photo" src="images/HongdaLiu.jpg" class="hoverZoomLink">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>
+                    Publications 
+                  </heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div id="pubs"></div>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                
+                <tr onmouseout="UniAlignment_stop()" onmouseover="UniAlignment_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <!-- <div class="two" id='UniAlignment_image'>
+                        <video width="100%" height="100%" muted autoplay loop>
+                          <source src="images/UniAlignment.mp4" type="video/mp4">
+                        </video>
+                      </div> -->
+                      <img src='images/UniAlignment.png' id='UniAlignment_before'  width="160" >
+                    </div>
+                    <script type="text/javascript">
+                      function UniAlignment_start() {
+                        document.getElementById('UniAlignment_image').style.opacity = "1";
+                      }
+                      function UniAlignment_stop() {
+                        document.getElementById('UniAlignment_image').style.opacity = "0";
+                      }
+                      UniAlignment_stop()
+                    </script>
+                  </td>
+
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://github.com/glimmer16/UniAlignment">
+                      <papertitle> UniAlignment: Semantic Alignment for Unified Image Generation, Understanding, Manipulation and Perception </papertitle>
+                    </a>
+                    <br>
+                    <strong>Xinyang Song</strong>,
+                    <a >Libin Wang</a>,
+                    <a >Weining Wang</a>,
+                    <a >Shaozhen Liu</a>,
+                    <a >Dandan Zheng</a>,
+                    <a >Jingdong Chen</a>,
+                    <a >Qi Li</a>,
+                    <a >Zhenan Sun</a>
+                    <br>
+                    <em>arXiv</em>, 2025
+                    <br>
+                    <a href="https://arxiv.org/abs/2509.23760">[paper]</a>
+                    <a href="https://github.com/glimmer16/UniAlignment">[code]</a>
+                    <br>
+                    <p><em> UniAlignment, a novel dual-branch diffusion-based framework, enables unified image generation, understanding, manipulation and perception through two forms of semantic alignment: intra-modal semantic alignment and inter-modal semantic alignment. </em></p>
+                  </td>
+                </tr>
+
+                <tr onmouseout="SeReDiff_stop()" onmouseover="SeReDiff_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <!-- <div class="two" id='SeReDiff_image'>
+                        <video width="100%" height="100%" muted autoplay loop>
+                          <source src="images/SeReDiff.mp4" type="video/mp4">
+                        </video>
+                      </div> -->
+                      <img src='images/SeReDiff.jpg' id='SeReDiff_before'  width="160" >
+                    </div>
+                    <script type="text/javascript">
+                      function SeReDiff_start() {
+                        document.getElementById('SeReDiff_image').style.opacity = "1";
+                      }
+                      function SeReDiff_stop() {
+                        document.getElementById('SeReDiff_image').style.opacity = "0";
+                      }
+                      SeReDiff_stop()
+                    </script>
+                  </td>
+
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a >
+                      <papertitle> Fine-grained Text-to-Image Synthesis with Semantic Refinement </papertitle>
+                    </a>
+                    <br>
+                    <strong>Xinyang Song</strong>,
+                    <a >Jianxin Sun</a>,
+                    <a >Yingya Zhang</a>,
+                    <a >Libin Wang</a>,
+                    <a >Qi Li</a>,
+                    <a >Zhenan Sun</a>
+                    <br>
+                    <em>ICASSP</em>, 2026 <font color="red"><strong>(Oral)</strong></font>
+                    <br>
+                    <p><em> SeReDiff, a fine-grained text-to-image generation framework based on semantic refinement. </em></p>
+                  </td>
+                </tr>
+                
+                <tr onmouseout="StyleVideo_stop()" onmouseover="StyleVideo_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <!-- <div class="two" id='StyleVideo_image'>
+                        <video width="100%" height="100%" muted autoplay loop>
+                          <source src="images/StyleVideo.mp4" type="video/mp4">
+                        </video>
+                      </div> -->
+                      <img src='images/StyleVideo.png' id='StyleVideo_before'  width="160" >
+                    </div>
+                    <script type="text/javascript">
+                      function StyleVideo_start() {
+                        document.getElementById('BRL_image').style.opacity = "1";
+                      }
+                      function StyleVideo_stop() {
+                        document.getElementById('BRL_image').style.opacity = "0";
+                      }
+                      StyleVideo_stop()
+                    </script>
+                  </td>
+
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a >
+                      <papertitle> StyleVideo: One-shot Image-Guided Video Style Transfer </papertitle>
+                    </a>
+                    <br>
+                    <strong>Xinyang Song</strong>,
+                    <a >Xi Yong</a>,
+                    <a >Qi Li</a>,
+                    <a >Jianxin Sun</a>,
+                    <a >Yunfan Liu</a>,
+                    <a >Zhenan Sun</a>
+                    <br>
+                    <em>Machine Intelligence Research (MIR)</em>, 2025
+                    <br>
+                    <p><em> StyleVideo, a one-shot method that realizes image-guided video style transfer by leveraging diffusion models. </em></p>
+                  </td>
+                </tr>
+
+                <tr onmouseout="GroupVideo_stop()" onmouseover="GroupVideo_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <!-- <div class="two" id='GroupVideo_image'>
+                        <video width="100%" height="100%" muted autoplay loop>
+                          <source src="images/GroupVideo.mp4" type="video/mp4">
+                        </video>
+                      </div> -->
+                      <img src='images/GroupVideo.png' id='GroupVideo_before'  width="160" >
+                    </div>
+                    <script type="text/javascript">
+                      function GroupVideo_start() {
+                        document.getElementById('GroupVideo_image').style.opacity = "1";
+                      }
+                      function GroupVideo_stop() {
+                        document.getElementById('GroupVideo_image').style.opacity = "0";
+                      }
+                      GroupVideo_stop()
+                    </script>
+                  </td>
+
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a >
+                      <papertitle> GroupVideo: Multi-Identity Customized Text-to-Video Generation </papertitle>
+                    </a>
+                    <br>
+                    <strong>Xinyang Song</strong>,
+                    <a >Libin Wang</a>,
+                    <a >Jianxin Sun</a>,
+                    <a >Qi Li</a>,
+                    <a >Dandan Zheng</a>,
+                    <a >Jingdong Chen</a>,
+                    <a >Zhenan Sun</a>
+                    <br>
+                    <em>Submitted to IEEE Transactions on Multimedia (TMM)</em>, 2025
+                    <br>
+                    <p><em> GroupVideo, a novel video dit framework that leverages multiple individual photographs to generate identity-customized video.  </em></p>
+                  </td>
+                </tr>
+
+                <tr onmouseout="3SGen_stop()" onmouseover="3SGen_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <!-- <div class="two" id='3SGen_image'>
+                        <video width="100%" height="100%" muted autoplay loop>
+                          <source src="images/3SGen.mp4" type="video/mp4">
+                        </video>
+                      </div> -->
+                      <img src='images/3SGen.png' id='3SGen_before'  width="160" >
+                    </div>
+                    <script type="text/javascript">
+                      function 3SGen_start() {
+                        document.getElementById('3SGen_image').style.opacity = "1";
+                      }
+                      function 3SGen_stop() {
+                        document.getElementById('3SGen_image').style.opacity = "0";
+                      }
+                      3SGen_stop()
+                    </script>
+                  </td>
+
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a >
+                      <papertitle> 3SGen: Unified Subject, Style, and Structure-Driven Image Generation with Adaptive Task-specific Memory </papertitle>
+                    </a>
+                    <br>
+                    <strong>Xinyang Song</strong>,
+                    <a >Libin Wang</a>,
+                    <a >Weining Wang</a>,
+                    <a >Zhiwei Li</a>,
+                    <a >Jianxin Sun</a>,
+                    <a >Dandan Zheng</a>,
+                    <a >Jingdong Chen</a>,
+                    <a >Qi Li</a>,
+                    <a >Zhenan Sun</a>
+                    <br>
+                    <em>arxiv</em>, 2025
+                    <br>
+                    <a href="https://arxiv.org/abs/2512.19271">[paper]</a>
+                    <br>
+                    <p><em> 3SGen, a taskaware unified framework that performs subject-driven, style-driven and structure-driven conditioning modes within a single model.   </em></p>
+                  </td>
+                </tr>
+
+                <tr onmouseout="shuohuaren_stop()" onmouseover="shuohuaren_start()">
+
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a >
+                      <papertitle> Review of Talking Face Generation </papertitle>
+                    </a>
+                    <br>
+                    <strong>Xinyang Song</strong>,
+                    <a >Zhiyuan Yan</a>,
+                    <a >Muyi Sun</a>,
+                    <a >Linlin Dai</a>,
+                    <a >Qi Li</a>,
+                    <a >Zhenan Sun</a>
+                    <br>
+                    <em>Computer Science</em>, 2023
+                    <br>
+                    <p><em> A Chinese survey on the current status and development trends of talking face generation research.  </em></p>
+                  </td>
+                </tr>
+                
+              </tbody>
+          </table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Honors and Awards</heading>
+                <ul>
+                  <li> Merit Student of UCAS, 2024. 
+                  </li>
+                  <li> Excellent Undergraduate Scholarship of Jilin University, 2020. 
+                  </li>
+                  <li> National Special Prize of China Education Robot Contest, 2020.
+                  </li>
+                  <li> Excellent League Member of Jilin University, 2020.
+                  </li>
+                  <li> People's Scholarship, 2019, 2020, 2021.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Internship</heading>
+                <ul>
+                  <li> 
+                    AntGroup, Bailing, Vision Generation (2024.08-now)
+                  </li>
+                  <li> 
+                    Meituan, Advertisement, Algorithm (2023.12-2024.2)
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:right;font-size:small;">
+                    <a href="https://jonbarron.info/">Website Template</a>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<p><center>
+  <div id="clustrmaps-widget" style="width:5%">
+    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EaGIoPH3dDfrXLhRZNik93b9NzvEAGu1Pj-HNMgU4no"></script>
+  </div>        
+  <br>
+    &copy; Xinyang Song | Last updated: Mar 30, 2026
+</center></p>
+
+</body>
+</html>
